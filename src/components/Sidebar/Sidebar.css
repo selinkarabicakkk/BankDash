@@ -1,0 +1,46 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8rem;
+    margin-bottom: 8rem; */
+}
+
+.sidebar{
+    width: 20%;
+    height: 40%;
+    margin-top: -1rem;
+}
+
+.sidebar img{
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    line-height: 3rem;
+    gap: 1rem;
+}
+
+.sidebar ul li {
+    color: #B1B1B1;
+    font-weight: 500;
+}
+
+.sidebar ul li i{
+    margin-right: 1.5rem;
+
+}
+
+.sidebar ul li:hover {
+    color: #2D60FF;
+    cursor: pointer;
+}
+
+
+
