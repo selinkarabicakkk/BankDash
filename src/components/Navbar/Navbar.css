@@ -1,0 +1,86 @@
+.navbar-left  {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.navbar-left span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #343C6A;
+    }
+
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: max-content;
+        margin-top: 1.3rem;
+        border-bottom: 2px solid #E6EFF5;
+    }
+    
+    
+    .navbar-right {
+        display: flex;
+        gap: 1.8rem;
+        justify-content: flex-end;
+        margin-left: 15.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .search-bar {
+        position: relative;
+        top: 1.3rem;
+    }
+    
+    
+    .search-bar input {
+        border: none;
+        background-color: #F5F7FA;
+        padding: 1.2rem 0rem 1.2rem 3rem;
+        border-radius: 5rem;
+        width: 20rem;
+    }
+    
+    .search-bar input::placeholder {
+        color: #B1B1B1;
+        
+    }
+    
+    .fa-magnifying-glass {
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        color: #B1B1B1;
+        font-size: 1.2rem;
+    }
+
+
+    .navbar-icon-settings{ 
+        color: #B1B1B1;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar-icon-notification {
+        color: #B1B1B1;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+    .navbar-icon-notification, .navbar-icon-settings, .profile-picture :hover {
+        cursor: pointer;
+    }
+    
+    .profile-picture {
+   display: contents;
+   border-radius: 15rem;
+}
+
+  .profile-picture img{
+    margin-top: 1.4rem;
+    width: 8%;
+    border-radius: 4rem;
+    height: 60%;
+    object-fit: contain;
+}
