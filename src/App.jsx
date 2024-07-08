@@ -1,11 +1,14 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
-import Navbar from "./components/Navbar/Navbar.jsx";
+import Overview from "./components/Overview/Overview.jsx";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="dashboard">
+        <Sidebar />
+        <Overview />
+      </div>
     </>
   );
 }
