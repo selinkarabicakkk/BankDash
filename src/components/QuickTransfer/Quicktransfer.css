@@ -1,0 +1,20 @@
+.people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.liviabator {
+    font-weight: bold;
+}
+
+.people img {
+ 
+    border-radius: 50%;
+}
+
+.amount_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
