@@ -8,6 +8,8 @@ import transaction_pp from "../../assets/transaction_pp.png";
 import transaction_dollar from "../../assets/transaction_dollar.png";
 import WeeklyActivityChart from "../WeeklyActivityChart/Weeklyactivitychart.jsx";
 import ExpenseStatisticsChart from "../ExpenseStatisticsChart/Expensestatisticschart.jsx";
+import QuickTransfer from "../QuickTransfer/Quicktransfer.jsx";
+import BalanceHistoryChart from "../BalanceHistory/Balancehistory.jsx";
 
 const Overview = () => {
   return (
@@ -96,11 +98,11 @@ const Overview = () => {
         <div className="third-row">
           <div className="left-side">
             <h2>Quick Transfer</h2>
-            <Box className="flex-1">{" fsfdfds"}</Box>
+            <Box className="flex-1">{<QuickTransfer />}</Box>
           </div>
           <div className="right-side">
             <h2>Balance History</h2>
-            <Box className="flex-2">{" fsfdfds"}</Box>
+            <Box className="flex-2">{<BalanceHistoryChart />}</Box>
           </div>
         </div>
       </div>
