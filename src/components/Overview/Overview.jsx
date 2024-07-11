@@ -7,6 +7,7 @@ import transaction_card from "../../assets/transaction_card.png";
 import transaction_pp from "../../assets/transaction_pp.png";
 import transaction_dollar from "../../assets/transaction_dollar.png";
 import WeeklyActivityChart from "../WeeklyActivityChart/Weeklyactivitychart.jsx";
+import ExpenseStatisticsChart from "../ExpenseStatisticsChart/Expensestatisticschart.jsx";
 
 const Overview = () => {
   return (
@@ -88,7 +89,7 @@ const Overview = () => {
           </div>
           <div className="right-side">
             <h2>Expense Statistics</h2>
-            <Box className="flex-1">{" fsfdfds"}</Box>
+            <Box className="flex-1">{<ExpenseStatisticsChart />}</Box>
           </div>
         </div>
 
