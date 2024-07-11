@@ -1,5 +1,5 @@
 .navbar-left  {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 2rem;
 }
 .navbar-left span {
@@ -24,7 +24,9 @@
         gap: 1.8rem;
         justify-content: flex-end;
         margin-left: 15.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.7rem;
+        margin-right: 2rem;
+        margin-top: -1rem;
     }
     
     .search-bar {
