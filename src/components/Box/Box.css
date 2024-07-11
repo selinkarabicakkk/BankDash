@@ -1,0 +1,21 @@
+.box {
+    background-color: white;
+    border-radius: 3rem;
+    border: 1px solid rgba(180, 180, 180, 0.132);
+    width: 100%;
+    height: 100%; /* Ensure box takes full height */
+    overflow: hidden;
+    padding: 0; /* Remove any padding */  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .flex-2 {
+    flex: 2;
+  }
+  
+  .flex-3 {
+    flex: 3;
+  }
+  
