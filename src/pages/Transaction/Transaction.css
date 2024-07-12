@@ -1,0 +1,26 @@
+.transaction-page {
+    display: flex;
+}
+
+.other-than-sidebar  {
+    display: block;
+    width: 100%;
+
+} 
+
+.tr-content {
+    position: relative;
+    top: 1rem;
+    background-color: #F5F7FA;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.tr-top-left , .tr-top-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
