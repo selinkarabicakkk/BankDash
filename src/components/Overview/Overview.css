@@ -1,3 +1,5 @@
+ 
+
  .overview  {
     display: block;
     width: 100%;
@@ -5,27 +7,45 @@
 } 
 
 .content {
-    position: relative;
-    top: 1rem;
     background-color: #F5F7FA;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding: 2.5rem;
+}
+
+.credit-cards-headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-cards-headings h2 {
+    display: flex;
+    align-items: center;
 }
 
 .card-content {
     display: flex;
-    justify-content: space-between;
-    
-
+    flex-direction: column;
 }
 
-.first-row, .second-row, .third-row {
+.inside-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.first-row, .third-row {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 20px;
     gap: 1.5rem; /* Add some gap between the columns */
 
+}
+
+.second-row {
+    display: flex;
+    gap: 2rem;
 }
 
  .left-side span{
@@ -37,7 +57,6 @@
  .left-side {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /* bura gpt */
@@ -45,7 +64,6 @@
 .left-side, .right-side {
     display: flex;
     flex-direction: column; /* Ensure flex-direction is column */
-    justify-content: space-between;
   }
 
 .first-row .left-side {
@@ -65,9 +83,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: start;
-    position: relative;
-    right: 9.5rem;
+    justify-content: space-between;
 }
 
 .row img{
@@ -79,9 +95,26 @@
     justify-content: end;
     align-items: center;
     margin-right: 1rem;
+    width: 15%;
 }
 
+.row .image-div img{
+    width: 100%;
+}
 
+.recent-transaction {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
 
+.islem {
+    display: flex;
+    flex-direction: column;
+}
 
-  
+.amount {
+    display: flex;
+    align-items: center;
+}

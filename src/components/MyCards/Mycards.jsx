@@ -12,37 +12,32 @@ const Mycards = ({ cardType }) => {
 
   return (
     <div className={`card ${cardType}`}>
-      <div className="mycards">
-        <div className="top">
-          <div className="inside-top">
-            <div className="card-content">
-              <div className="inside-top">
-                <div className="balance-section">
-                  <span>Balance</span>
-                  <br />
-                  <span>$5,756</span>
-                </div>
-                <div>
-                  <img src={chipImage} alt="chip-icon" className="chip-icon" />
-                </div>
-              </div>
-              <div className="card-details">
-                <span>CARD HOLDER</span>
-                <br />
-                <span>Eddy Cusuma</span>
-                <br />
-                <span>VALID THRU</span>
-                <br />
-                <span>12/22</span>
-              </div>
-            </div>
+      <div className="top">
+        <div className="inside-top">
+          <div className="balance-section">
+            <span>Balance</span>
+            <br />
+            <span>$5,756</span>
+          </div>
+          <div>
+            <img src={chipImage} alt="chip-icon" className="chip-icon" />
           </div>
         </div>
-        <div className="bottom">
-          <div className="inside-bottom">
-            <span>3778 **** **** 1234</span>
-            <img src={chipLogo} alt="chip_logo" className="chip-logo" />
+        <div className="card-details">
+          <div className="card-holder">
+            <span>CARD HOLDER</span>
+            <span>Eddy Cusuma</span>
           </div>
+          <div className="valid-thru">
+            <span>VALID THRU</span>
+            <span>12/22</span>
+          </div>
+        </div>
+      </div>
+      <div className="bottom">
+        <div className="inside-bottom">
+          <span>3778 **** **** 1234</span>
+          <img src={chipLogo} alt="chip_logo" className="chip-logo" />
         </div>
       </div>
     </div>

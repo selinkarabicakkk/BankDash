@@ -5,10 +5,9 @@
     
   }
 
-  .blue-card .bottom {
-    
-        background-color: #0A06F4;
-      }  
+.blue-card .bottom {
+  background: linear-gradient(to bottom, #4b52d6, #000dff);
+}  
   
   .white-card {
     background: white;
@@ -18,47 +17,60 @@
   }
 
   .blue-card, .white-card {
-    border-radius: 2rem;
-    padding: 1rem;
-    margin: 1rem;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0; /* Ensure no margin */
-
-
   }
 
+  .card .top {
+    padding: 2rem 2rem 0;
+  }
 
+  .card .bottom {
+    padding: 1rem 2rem 1rem;
+  }
 
   .mycards {
     /* width: 50%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%; /* Ensure mycards takes full width */
-    height: 100%; /* Ensure mycards takes full height */
-    /* overflow: hidden; */
-    margin-right: 2rem;
-    
-
-
   }
-
-
-
-  .inside-top img{
-    
-  }
-
-  .inside-top .chip-icon {
-    width: 58%;
-    height: 20%;
-    display: inline;
-
-} 
 
 .inside-bottom .chip-logo {
-    width: 28%;
-    height: 20%;
-    display: inline;
+    width: 18%;
 }
 
+.inside-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inside-bottom span {
+  font-size: 1.3rem;
+}
+
+.card-details {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-holder,
+.valid-thru {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.card-holder span:first-child,
+.valid-thru span:first-child {
+  color: #fff;
+  opacity: 70%;
+}
+
+.card-holder span:last-child,
+.valid-thru span:last-child {
+  font-weight: 500;
+}

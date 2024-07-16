@@ -1,3 +1,7 @@
+.quick-transfer {
+    padding: 3rem 1.5rem;
+}
+
 .people {
     display: flex;
     flex-direction: row;
@@ -13,8 +17,49 @@
     border-radius: 50%;
 }
 
-.amount_input {
+.person {
+    text-align: center;
+}
+
+.person:first-child {
+    font-weight: bold;
+}
+
+.amount-part {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.amount-part span {
+    font-size: 0.8rem;
+}
+
+.amount-input {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+}
+
+.amount-input input {
+    border: none;
+    border-radius: 2rem;
+    background-color: #EDF1F7;
+    padding: 1rem 1rem 0.9rem 1.7rem;
+    color: #718EBF;
+}
+
+.amount-input button {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 0.7rem 1.3rem 0.7rem 1.2rem;
+    border-radius: 2rem;
+    background-color: #1814F3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
