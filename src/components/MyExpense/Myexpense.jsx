@@ -71,8 +71,7 @@ const MyExpenseChart = () => {
   };
 
   return (
-    <div className="chart-container">
-      <h2>My Expense</h2>
+    <div className="chart-container2">
       <Bar data={data} options={options} />
     </div>
   );
