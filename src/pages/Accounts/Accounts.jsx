@@ -21,79 +21,73 @@ import InvoicesSent from "../../components/InvoicesSent/Invoicessent.jsx";
 
 const Accounts = () => {
   return (
-    <div className="accounts-page">
-      <Sidebar />
-      <div className="other-than-sidebar">
-        <Navbar />
-        <div className="acc-content">
-          <div className="acc-row1">
-            <Box className="flex-1">
-              {
-                <>
-                  <div className="acc_icon">
-                    <img src={acc_balance} alt="acc_balance" />{" "}
-                  </div>
-                  <div>
-                    <p>My Balance</p>
-                    <p>$12,750</p>
-                  </div>
-                </>
-              }
-            </Box>
-            <Box className="flex-1">
-              {
-                <>
-                  <div className="acc_icon">
-                    <img src={acc_income} alt="acc_income" />
-                  </div>
-                  <div>
-                    {" "}
-                    <p>Income</p>
-                    <p>$5,600</p>
-                  </div>
-                </>
-              }
-            </Box>
-            <Box className="flex-1">
-              {
-                <>
-                  <div className="acc_icon">
-                    <img src={acc_expense} alt="acc_expense" />
-                  </div>
-                  <div>
-                    {" "}
-                    <p>Expense</p>
-                    <p>$3,460</p>
-                  </div>
-                </>
-              }
-            </Box>
-            <Box className="flex-1">
-              {
-                <>
-                  <div className="acc_icon">
-                    <img src={acc_saving} alt="acc_saving" />
-                  </div>
-                  <div>
-                    <p>Total Saving</p>
-                    <p>$7,920</p>
-                  </div>
-                </>
-              }
-            </Box>
-          </div>
-          <div className="acc-row2">
-            <Box className="flex-2">
-              <LastTransaction />
-            </Box>
-            <Box className="flex-1"> {<Mycards cardType="blue-card" />}</Box>
-          </div>
-          <div className="acc-row3">
-            <Box className="flex-2">{<DebitCreditOverview />}</Box>
+    <div className="acc-content">
+      <div className="acc-row1">
+        <Box className="flex-1">
+          {
+            <>
+              <div className="acc_icon">
+                <img src={acc_balance} alt="acc_balance" />{" "}
+              </div>
+              <div>
+                <p>My Balance</p>
+                <p>$12,750</p>
+              </div>
+            </>
+          }
+        </Box>
+        <Box className="flex-1">
+          {
+            <>
+              <div className="acc_icon">
+                <img src={acc_income} alt="acc_income" />
+              </div>
+              <div>
+                {" "}
+                <p>Income</p>
+                <p>$5,600</p>
+              </div>
+            </>
+          }
+        </Box>
+        <Box className="flex-1">
+          {
+            <>
+              <div className="acc_icon">
+                <img src={acc_expense} alt="acc_expense" />
+              </div>
+              <div>
+                {" "}
+                <p>Expense</p>
+                <p>$3,460</p>
+              </div>
+            </>
+          }
+        </Box>
+        <Box className="flex-1">
+          {
+            <>
+              <div className="acc_icon">
+                <img src={acc_saving} alt="acc_saving" />
+              </div>
+              <div>
+                <p>Total Saving</p>
+                <p>$7,920</p>
+              </div>
+            </>
+          }
+        </Box>
+      </div>
+      <div className="acc-row2">
+        <Box className="flex-2">
+          <LastTransaction />
+        </Box>
+        <Box className="flex-1"> {<Mycards cardType="blue-card" />}</Box>
+      </div>
+      <div className="acc-row3">
+        <Box className="flex-2">{<DebitCreditOverview />}</Box>
 
-            <Box className="flex-1">{<InvoicesSent />}</Box>
-          </div>
-        </div>
+        <Box className="flex-1">{<InvoicesSent />}</Box>
       </div>
     </div>
   );
