@@ -1,0 +1,52 @@
+.invoices-container {
+    width:100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    margin-bottom: 1.3rem;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .invoice-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0.7rem;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .invoice-card:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .invoice-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    display: contents   ;
+    border-radius: 30px;
+  }
+  
+  .invoice-details {
+    flex-grow: 1;
+  }
+  
+  .invoice-name {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .invoice-time {
+    color: #aaa;
+    font-size: 12px;
+  }
+  
+  .invoice-amount {
+    font-weight: 600;
+    color: #333;
+  }
+  
