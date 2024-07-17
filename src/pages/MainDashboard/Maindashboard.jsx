@@ -8,7 +8,6 @@ function MainDashboard() {
   return (
     <>
       <div className="dashboard">
-        <Sidebar />
         <Overview />
       </div>
     </>

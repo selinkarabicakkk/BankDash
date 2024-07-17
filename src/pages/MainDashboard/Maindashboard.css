@@ -1,3 +1,9 @@
 .dashboard {
     display: flex;
 }
+
+.overview  {
+    display: block;
+    width: 100%;
+
+} 

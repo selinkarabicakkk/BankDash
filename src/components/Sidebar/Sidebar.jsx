@@ -11,57 +11,57 @@ const Sidebar = () => {
       </div>
       <ul>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-house"></i>
+          <Link to="/dashboard">
+            <i className="fa-solid fa-house"></i>
             Dashboard
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-money-bill-transfer"></i>
+          <Link to="/transactions">
+            <i className="fa-solid fa-money-bill-transfer"></i>
             Transactions
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-user"></i>
+          <Link to="/accounts">
+            <i className="fa-solid fa-user"></i>
             Accounts
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-chart-line"></i>
+          <Link to="/investments">
+            <i className="fa-solid fa-chart-line"></i>
             Investments
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-credit-card"></i>
+          <Link to="/credit-cards">
+            <i className="fa-solid fa-credit-card"></i>
             Credit Cards
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-hand-holding-dollar"></i>
+          <Link to="/loans">
+            <i className="fa-solid fa-hand-holding-dollar"></i>
             Loans
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+          <Link to="/services">
+            <i className="fa-solid fa-screwdriver-wrench"></i>
             Services
-          </span>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-star"></i>My Privileges
-          </span>
+          <Link to="/privileges">
+            <i className="fa-solid fa-star"></i>My Privileges
+          </Link>
         </li>
         <li className="sidebar-item">
-          <span>
-            <i class="fa-solid fa-gear"></i>
+          <Link to="/settings">
+            <i className="fa-solid fa-gear"></i>
             Settings
-          </span>
+          </Link>
         </li>
       </ul>
     </div>
