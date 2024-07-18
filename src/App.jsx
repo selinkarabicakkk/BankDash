@@ -15,10 +15,10 @@ function App() {
         <Sidebar />
         <div>
           <Navbar />
-          <MainDashboard />
+          {/* <MainDashboard /> */}
           <Routes>
-            <Route exact path="/main-dashboard" element={<MainDashboard />} />
-            <Route exact path="/transaction" element={<Transaction />} />
+            <Route exact path="/dashboard" element={<MainDashboard />} />
+            <Route exact path="/transactions" element={<Transaction />} />
             <Route exact path="/accounts" element={<Accounts />} />
           </Routes>
         </div>
