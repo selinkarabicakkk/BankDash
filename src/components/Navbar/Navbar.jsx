@@ -2,14 +2,30 @@ import React from "react";
 import "./Navbar.css";
 import ReactDOM from "react-dom";
 import Profile_Icon from "../../assets/profile_icon.png";
+import { useLocation } from "react-router-dom";
+
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const getPageName = () => {
+    switch (location.pathname) {
+      case "/dashboard":
+        return "Overview";
+      case "/transactions":
+        return "Transactions";
+      case "/accounts":
+        return "Accounts";
+      default:
+        return "Page";
+    }
+  };
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <span>Overview</span>
+        <span>{getPageName()}</span>
       </div>
       <div className="navbar-right">
         <div className="search-bar">
