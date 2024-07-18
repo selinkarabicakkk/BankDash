@@ -9,6 +9,8 @@
     margin-bottom: 1.3rem;
     font-size: 18px;
     color: #333;
+    display: flex;
+    justify-content: flex-start;
   }
   
   .invoice-card {

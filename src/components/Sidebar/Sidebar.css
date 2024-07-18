@@ -43,5 +43,18 @@
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #2D60FF;
+}
 
+a:active {
+    text-decoration: none;
+    color: #2D60FF;
+    cursor: pointer;
+}
 
+a {
+    color: #B1B1B1;
+    text-decoration: none;
+}
