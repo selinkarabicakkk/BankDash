@@ -21,6 +21,8 @@ const Navbar = () => {
         return t("transactions");
       case "/accounts":
         return t("accounts");
+      case "/":
+        return t("overview");
       default:
         return t("page_not_found");
     }

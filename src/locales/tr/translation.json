@@ -122,7 +122,8 @@
             "michael": "Michael",
             "playstation": "PlayStation",
             "william": "William",
-            "deposit_paypal": "Paypal'a para yatırma"
+            "deposit_paypal": "Paypal'a para yatırma",
+            "invoices_sent": "Gönderilen Faturalar"
           
           
     }

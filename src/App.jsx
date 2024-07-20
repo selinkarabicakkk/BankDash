@@ -18,6 +18,7 @@ function App() {
           <Navbar />
           {/* <MainDashboard /> */}
           <Routes>
+            <Route exact path="/" element={<MainDashboard />} />
             <Route exact path="/dashboard" element={<MainDashboard />} />
             <Route exact path="/transactions" element={<Transaction />} />
             <Route exact path="/accounts" element={<Accounts />} />

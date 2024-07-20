@@ -88,7 +88,6 @@ const Accounts = () => {
       </div>
       <div className="acc-row3">
         <Box className="flex-2">{<DebitCreditOverview />}</Box>
-
         <Box className="flex-1">{<InvoicesSent />}</Box>
       </div>
     </div>

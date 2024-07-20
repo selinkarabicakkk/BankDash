@@ -1,13 +1,16 @@
 import React from "react";
 import "./Lasttransaction.css"; // Ensure this CSS file is included for styling
 import { useTranslation } from "react-i18next";
+import acc_bell from "../../assets/acc_bell.png";
+import acc_tool from "../../assets/acc_tool.png";
+import acc_person from "../../assets/acc_person.png";
 
 const LastTransaction = () => {
   const { t } = useTranslation();
   const transactionData = [
     {
       id: 1,
-      icon: "spotify-icon",
+      icon: acc_bell,
       descriptionKey: "spotify_subscription",
       categoryKey: "shopping",
       card: "1234 ****",
@@ -17,7 +20,7 @@ const LastTransaction = () => {
     },
     {
       id: 2,
-      icon: "mobile-icon",
+      icon: acc_tool,
       descriptionKey: t("mobile_services"),
       categoryKey: "service",
       card: "1234 ****",
@@ -27,7 +30,7 @@ const LastTransaction = () => {
     },
     {
       id: 3,
-      icon: "transfer-icon",
+      icon: acc_person,
       descriptionKey: t("emilly", "wilson"),
       categoryKey: "transfer",
       card: "1234 ****",
@@ -48,7 +51,10 @@ const LastTransaction = () => {
   }) => {
     return (
       <div className="transaction">
-        <div className={`icon ${icon}`}></div>
+        <div className="icon">
+          <img src={icon} alt={descriptionKey} />
+        </div>
+
         <div className="description">
           <div>{t(descriptionKey)}</div>
           <div className="date">{date}</div>

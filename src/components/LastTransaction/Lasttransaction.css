@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #e0e0e0;
   }
   
   .icon {
@@ -25,23 +24,23 @@
     justify-content: center;
     margin-right: 10px;
   }
+
+
   
-  .icon.spotify-icon {
-    background-color: #1db954;
-  }
-  
-  .icon.mobile-icon {
-    background-color: #4285f4;
-  }
-  
-  .icon.transfer-icon {
-    background-color: #ff4081;
+ .icon img {
+    width: 130%;
   }
   
   .description {
     flex: 1;
   }
   
+.details {
+  display: flex;
+  gap: 4rem;
+  color: #718EBF;
+}
+
   .category-date {
     display: flex;
     justify-content: space-between;
