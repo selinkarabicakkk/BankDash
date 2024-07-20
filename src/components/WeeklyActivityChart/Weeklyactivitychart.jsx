@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import {
   BarChart,
   Bar,
@@ -10,17 +12,19 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  { name: "Sat", Deposit: 400, Withdraw: 240 },
-  { name: "Sun", Deposit: 300, Withdraw: 139 },
-  { name: "Mon", Deposit: 200, Withdraw: 980 },
-  { name: "Tue", Deposit: 278, Withdraw: 390 },
-  { name: "Wed", Deposit: 189, Withdraw: 480 },
-  { name: "Thu", Deposit: 239, Withdraw: 380 },
-  { name: "Fri", Deposit: 349, Withdraw: 430 },
-];
-
 const WeeklyActivityChart = () => {
+  const { t } = useTranslation();
+
+  const data = [
+    { name: t("sat"), Deposit: 400, Withdraw: 240 },
+    { name: t("sun"), Deposit: 300, Withdraw: 139 },
+    { name: t("mon"), Deposit: 200, Withdraw: 980 },
+    { name: t("tue"), Deposit: 278, Withdraw: 390 },
+    { name: t("wed"), Deposit: 189, Withdraw: 480 },
+    { name: t("thu"), Deposit: 239, Withdraw: 380 },
+    { name: t("fri"), Deposit: 349, Withdraw: 430 },
+  ];
+
   return (
     <ResponsiveContainer width="100%" height={350}>
       <BarChart
@@ -32,8 +36,8 @@ const WeeklyActivityChart = () => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="Deposit" fill="#1814F3" />
-        <Bar dataKey="Withdraw" fill="#16DBCC" />
+        <Bar dataKey={t("deposit")} fill="#1814F3" />
+        <Bar dataKey={t("withdraw")} fill="#16DBCC" />
       </BarChart>
     </ResponsiveContainer>
   );

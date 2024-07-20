@@ -4,42 +4,45 @@ import acc_yellowuser from "../../assets/acc_yellowuser.png";
 import acc_playstation from "../../assets/acc_playstation.png";
 import acc_apple from "../../assets/acc_apple.png";
 import acc_person from "../../assets/acc_person.png";
-
-const invoices = [
-  {
-    name: "Apple Store",
-    amount: "$450",
-    time: "5h ago",
-    color: "#E0F7FA",
-    image: acc_apple,
-  },
-  {
-    name: "Michael",
-    amount: "$160",
-    time: "2 days ago",
-    color: "#FFF3E0",
-    image: acc_yellowuser,
-  },
-  {
-    name: "Playstation",
-    amount: "$1085",
-    time: "5 days ago",
-    color: "#E3F2FD",
-    image: acc_playstation,
-  },
-  {
-    name: "William",
-    amount: "$90",
-    time: "10 days ago",
-    color: "#FFEBEE",
-    image: acc_person,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const InvoicesSent = () => {
+  const { t } = useTranslation();
+
+  const invoices = [
+    {
+      name: t("apple_store"),
+      amount: "$450",
+      time: t("time_5h_ago"),
+      color: "#E0F7FA",
+      image: acc_apple,
+    },
+    {
+      name: t("michael"),
+      amount: "$160",
+      time: t("time_2d_ago"),
+      color: "#FFF3E0",
+      image: acc_yellowuser,
+    },
+    {
+      name: t("playstation"),
+      amount: "$1085",
+      time: t("time_2d_ago"),
+      color: "#E3F2FD",
+      image: acc_playstation,
+    },
+    {
+      name: t("william"),
+      amount: "$90",
+      time: t("time_10d_ago"),
+      color: "#FFEBEE",
+      image: acc_person,
+    },
+  ];
+
   return (
     <div className="invoices-container">
-      <h2>Invoices Sent</h2>
+      <h2>{t("invoices_sent")}</h2>
       {invoices.map((invoice, index) => (
         <div
           key={index}

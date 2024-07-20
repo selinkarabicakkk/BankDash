@@ -11,6 +11,7 @@ import {
   Legend,
 } from "chart.js";
 import "./Balancehistory.css";
+import { useTranslation } from "react-i18next";
 
 // Register the necessary chart components
 ChartJS.register(
@@ -24,11 +25,21 @@ ChartJS.register(
 );
 
 const BalanceHistoryChart = () => {
+  const { t } = useTranslation();
+
   const data = {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan"],
+    labels: [
+      t("jul"),
+      t("aug"),
+      t("sep"),
+      t("oct"),
+      t("nov"),
+      t("dec"),
+      t("jan"),
+    ],
     datasets: [
       {
-        label: "Balance",
+        label: t("balance"),
         data: [150, 220, 420, 790, 200, 550, 220],
         borderColor: "rgba(0, 123, 255, 1)",
         backgroundColor: "rgba(0, 123, 255, 0.2)",
@@ -48,9 +59,8 @@ const BalanceHistoryChart = () => {
 
   return (
     <div className="chart-container">
-      <Line data={data} options={options} />
+      <Line data={data} options={options} className="canvas" />
     </div>
   );
 };
-
 export default BalanceHistoryChart;
