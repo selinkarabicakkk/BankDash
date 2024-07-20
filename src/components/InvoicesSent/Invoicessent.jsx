@@ -44,11 +44,7 @@ const InvoicesSent = () => {
     <div className="invoices-container">
       <h2>{t("invoices_sent")}</h2>
       {invoices.map((invoice, index) => (
-        <div
-          key={index}
-          className="invoice-card"
-          style={{ backgroundColor: invoice.color }}
-        >
+        <div key={index} className="invoice-card">
           <div className="invoice-icon">
             <img src={invoice.image} alt={invoice.name} />
           </div>
