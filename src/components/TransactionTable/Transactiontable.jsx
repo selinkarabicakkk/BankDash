@@ -1,73 +1,75 @@
 import React from "react";
 import "./Transactiontable.css";
-
-const transactions = [
-  {
-    description: "Spotify Subscription",
-    transactionId: "#12548796",
-    type: "Shopping",
-    card: "1234 ****",
-    date: "28 Jan, 12:30 AM",
-    amount: -2500,
-    receipt: "Download",
-  },
-  {
-    description: "Freepik Sales",
-    transactionId: "#12548796",
-    type: "Transfer",
-    card: "1234 ****",
-    date: "25 Jan, 10:40 PM",
-    amount: 750,
-    receipt: "Download",
-  },
-  {
-    description: "Mobile Service",
-    transactionId: "#12548796",
-    type: "Service",
-    card: "1234 ****",
-    date: "20 Jan, 10:40 PM",
-    amount: -150,
-    receipt: "Download",
-  },
-  {
-    description: "Wilson",
-    transactionId: "#12548796",
-    type: "Transfer",
-    card: "1234 ****",
-    date: "15 Jan, 03:29 PM",
-    amount: -1050,
-    receipt: "Download",
-  },
-  {
-    description: "Emilly",
-    transactionId: "#12548796",
-    type: "Transfer",
-    card: "1234 ****",
-    date: "14 Jan, 10:40 PM",
-    amount: 840,
-    receipt: "Download",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const TransactionTable = () => {
+  const { t } = useTranslation();
+  const transactions = [
+    {
+      description: t("spotify_subscription"),
+      transactionId: "#12548796",
+      type: t("shopping"),
+      card: "1234 ****",
+      date: "28 Jan, 12:30 AM",
+      amount: -2500,
+      receipt: t("download"),
+    },
+    {
+      description: t("freepik_sales"),
+      transactionId: "#12548796",
+      type: t("transfer"),
+      card: "1234 ****",
+      date: "25 Jan, 10:40 PM",
+      amount: 750,
+      receipt: t("download"),
+    },
+    {
+      description: t("mobile_services"),
+      transactionId: "#12548796",
+      type: t("service"),
+      card: "1234 ****",
+      date: "20 Jan, 10:40 PM",
+      amount: -150,
+      receipt: t("download"),
+    },
+    {
+      description: t("wilson"),
+      transactionId: "#12548796",
+      type: t("transfer"),
+      card: "1234 ****",
+      date: "15 Jan, 03:29 PM",
+      amount: -1050,
+      receipt: t("download"),
+    },
+    {
+      description: t("emilly"),
+      transactionId: "#12548796",
+      type: t("transfer"),
+      card: "1234 ****",
+      date: "14 Jan, 10:40 PM",
+      amount: 840,
+      receipt: t("download"),
+    },
+  ];
+
   return (
     <div className="transaction-table-container">
-      <h2 style={{ color: "#343C6A" }}>Recent Transactions</h2>
+      <h2 style={{ color: "#343C6A" }}>{t("recent_transactions")}</h2>
       <div className="tabs">
-        <button className="active-tab">All Transactions</button>
-        <button>Income</button>
-        <button>Expense</button>
+        <button className="active-tab">{t("all_transactions")}</button>
+        <button>{t("income")}</button>
+        <button>{t("expense")}</button>
       </div>
       <table className="transaction-table">
         <thead>
           <tr>
-            <th>Description</th>
-            <th>Transaction ID</th>
-            <th>Type</th>
-            <th>Card</th>
-            <th>Date</th>
-            <th>Amount</th>
-            <th>Receipt</th>
+            <th>{t("description")}</th>
+            <th>{t("transaction_id")}</th>
+            <th>{t("type")}</th>
+            <th>{t("card")}</th>
+            <th>{t("date")}</th>
+            <th>{t("amount")}</th>
+            <th>{t("receipt")}</th>
           </tr>
         </thead>
         <tbody>

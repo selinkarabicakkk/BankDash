@@ -10,50 +10,53 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import "./Debitcreditoverview.css";
-
-const data = [
-  {
-    name: "Sat",
-    Debit: 2000,
-    Credit: 7560,
-  },
-  {
-    name: "Sun",
-    Debit: 3000,
-    Credit: 5400,
-  },
-  {
-    name: "Mon",
-    Debit: 2000,
-    Credit: 4200,
-  },
-  {
-    name: "Tue",
-    Debit: 2780,
-    Credit: 3100,
-  },
-  {
-    name: "Wed",
-    Debit: 1890,
-    Credit: 4300,
-  },
-  {
-    name: "Thu",
-    Debit: 2390,
-    Credit: 3800,
-  },
-  {
-    name: "Fri",
-    Debit: 3490,
-    Credit: 4300,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const DebitCreditOverview = () => {
+  const { t } = useTranslation();
+
+  const data = [
+    {
+      name: t("sat"),
+      Debit: 2000,
+      Credit: 7560,
+    },
+    {
+      name: t("sun"),
+      Debit: 3000,
+      Credit: 5400,
+    },
+    {
+      name: t("mon"),
+      Debit: 2000,
+      Credit: 4200,
+    },
+    {
+      name: t("tue"),
+      Debit: 2780,
+      Credit: 3100,
+    },
+    {
+      name: t("wed"),
+      Debit: 1890,
+      Credit: 4300,
+    },
+    {
+      name: t("thu"),
+      Debit: 2390,
+      Credit: 3800,
+    },
+    {
+      name: t("fri"),
+      Debit: 3490,
+      Credit: 4300,
+    },
+  ];
+
   return (
     <div>
-      <h2>Debit & Credit Overview</h2>
-      <p>$7,560 Debited & $5,420 Credited in this Week</p>
+      <h2>{t("debit_credit_overview")}</h2>
+      <p>{t("debited_credited_week")}</p>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
           data={data}
@@ -69,8 +72,8 @@ const DebitCreditOverview = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="Credit" fill="#ffbb33" />
-          <Bar dataKey="Debit" fill="#3366ff" />
+          <Bar dataKey={t("credit")} fill="#ffbb33" />
+          <Bar dataKey={t("debit")} fill="#3366ff" />
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -7,6 +7,7 @@ import MainDashboard from "./pages/MainDashboard/Maindashboard.jsx";
 import Accounts from "./pages/Accounts/Accounts.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher.jsx";
 
 function App() {
   return (

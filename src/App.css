@@ -39,6 +39,11 @@
 
 }
 
+.navbar-withlanguage {
+  display: flex;
+  
+}
+
 
 
 @keyframes App-logo-spin {

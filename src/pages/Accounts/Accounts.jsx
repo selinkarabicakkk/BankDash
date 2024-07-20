@@ -18,8 +18,10 @@ import acc_playstation from "../../assets/acc_playstation.png";
 import acc_apple from "../../assets/acc_apple.png";
 import acc_person from "../../assets/acc_person.png";
 import InvoicesSent from "../../components/InvoicesSent/Invoicessent.jsx";
+import { useTranslation } from "react-i18next";
 
 const Accounts = () => {
+  const { t } = useTranslation();
   return (
     <div className="acc-content">
       <div className="acc-row1">
@@ -30,7 +32,7 @@ const Accounts = () => {
                 <img src={acc_balance} alt="acc_balance" />{" "}
               </div>
               <div>
-                <p>My Balance</p>
+                <p>{t("my_balance")}</p>
                 <p>$12,750</p>
               </div>
             </>
@@ -44,7 +46,7 @@ const Accounts = () => {
               </div>
               <div>
                 {" "}
-                <p>Income</p>
+                <p>{t("income")}</p>
                 <p>$5,600</p>
               </div>
             </>
@@ -58,7 +60,7 @@ const Accounts = () => {
               </div>
               <div>
                 {" "}
-                <p>Expense</p>
+                <p>{t("expense")}</p>
                 <p>$3,460</p>
               </div>
             </>
@@ -71,7 +73,7 @@ const Accounts = () => {
                 <img src={acc_saving} alt="acc_saving" />
               </div>
               <div>
-                <p>Total Saving</p>
+                <p>{t("total_saving")}</p>
                 <p>$7,920</p>
               </div>
             </>

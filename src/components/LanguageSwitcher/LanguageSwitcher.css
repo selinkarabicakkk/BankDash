@@ -1,0 +1,107 @@
+/* LanguageSelector.css */
+.language-selector {
+    position: relative;
+    display: contents;
+    margin-top: 1.5rem;
+  }
+  
+  .language-selector .current-language {
+    display: contents;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    color: #343C6A;
+    font-family: sans-serif;
+    font-size: 1rem;
+    justify-content: end;
+    
+  }
+
+  .language-name {
+    margin-top: 2.5rem; 
+   }
+ 
+  
+  .language-selector .flag {
+    width: 5%;
+    margin-top: 0.7rem;
+  }
+  
+  .language-selector .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5.8rem;
+    left: 85rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width:10%;
+  }
+
+  .language-selector .dropdown .dropdown-item .flag {
+      width: 20%;
+  }
+  
+  .dd-name {
+    margin-left: 1rem;
+    color: #343C6A;
+    margin-top: 0.5rem;
+  }
+
+
+  .language-selector .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+
+  }
+  
+  .language-selector .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+
+ 
+.name {
+    color: #343C6A;
+}
+
+
+.language-selector .arrow {
+  width: 4rem;
+  transition: transform 0.3s ease;
+  position: absolute;
+  /* left: 1rem; */
+  right: -1.4rem;
+  top: 1.3rem;
+
+}
+
+.dd_arrow {
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+
+.language-selector .arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-selector img[src*="cnflag"] {
+  width: 5%; 
+  margin-top: 0.7rem; 
+}
+
+.language-selector img[src*="ukflag"] {
+  width: 6%; 
+  margin-top: 0.7rem; 
+}
+

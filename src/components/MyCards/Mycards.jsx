@@ -1,21 +1,22 @@
 import React from "react";
 import "./Mycards.css";
-import ReactDOM from "react-dom";
 import chip_card from "../../assets/chip_card.png";
 import black_chip_card from "../../assets/black_chip_card.png";
 import bluecard_logo from "../../assets/bluecard_logo.png";
 import whitecard_logo from "../../assets/whitecard_logo.png";
+import { useTranslation } from "react-i18next";
 
 const Mycards = ({ cardType }) => {
   const chipImage = cardType === "blue-card" ? chip_card : black_chip_card;
   const chipLogo = cardType === "blue-card" ? bluecard_logo : whitecard_logo;
+  const { t } = useTranslation();
 
   return (
     <div className={`card ${cardType}`}>
       <div className="top">
         <div className="inside-top">
           <div className="balance-section">
-            <span>Balance</span>
+            <span>{t("balance")}</span>
             <br />
             <span>$5,756</span>
           </div>
@@ -25,11 +26,11 @@ const Mycards = ({ cardType }) => {
         </div>
         <div className="card-details">
           <div className="card-holder">
-            <span>CARD HOLDER</span>
-            <span>Eddy Cusuma</span>
+            <span>{t("card_holder")}</span>
+            <span>{t("eddy_cusuma")}</span>
           </div>
           <div className="valid-thru">
-            <span>VALID THRU</span>
+            <span>{t("valid_thru")}</span>
             <span>12/22</span>
           </div>
         </div>

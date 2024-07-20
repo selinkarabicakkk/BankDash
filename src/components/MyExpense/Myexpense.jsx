@@ -3,6 +3,7 @@ import "./Myexpense.css";
 import ReactDOM from "react-dom";
 import { Box } from "../Box/Box.jsx";
 import { Bar } from "react-chartjs-2";
+import { useTranslation } from "react-i18next";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -22,11 +23,12 @@ ChartJS.register(
 );
 
 const MyExpenseChart = () => {
+  const { t } = useTranslation();
   const data = {
-    labels: ["Aug", "Sep", "Oct", "Nov", "Dec", "Jan"],
+    labels: [t("aug"), t("sep"), t("oct"), t("nov"), t("dec"), t("jan")],
     datasets: [
       {
-        label: "Expenses",
+        label: t("expense"),
         data: [7500, 10000, 8500, 4500, 12500, 6500],
         backgroundColor: [
           "#EDF0F7",
