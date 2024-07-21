@@ -18,46 +18,45 @@ const DebitCreditOverview = () => {
   const data = [
     {
       name: t("sat"),
-      Debit: 2000,
-      Credit: 7560,
+      [t("Debit")]: 2000,
+      [t("Credit")]: 7560,
     },
     {
       name: t("sun"),
-      Debit: 3000,
-      Credit: 5400,
+      [t("Debit")]: 3000,
+      [t("Credit")]: 5400,
     },
     {
       name: t("mon"),
-      Debit: 2000,
-      Credit: 4200,
+      [t("Debit")]: 2000,
+      [t("Credit")]: 4200,
     },
     {
       name: t("tue"),
-      Debit: 2780,
-      Credit: 3100,
+      [t("Debit")]: 2780,
+      [t("Credit")]: 3100,
     },
     {
       name: t("wed"),
-      Debit: 1890,
-      Credit: 4300,
+      [t("Debit")]: 1890,
+      [t("Credit")]: 4300,
     },
     {
       name: t("thu"),
-      Debit: 2390,
-      Credit: 3800,
+      [t("Debit")]: 2390,
+      [t("Credit")]: 3800,
     },
     {
       name: t("fri"),
-      Debit: 3490,
-      Credit: 4300,
+      [t("Debit")]: 3490,
+      [t("Credit")]: 4300,
     },
   ];
 
   return (
-    <div>
-      <h2>{t("debit_credit_overview")}</h2>
-      <p>{t("debited_credited_week")}</p>
-      <ResponsiveContainer width="100%" height={400}>
+    <div className="debitcredit">
+      <p>{t("$7,560 Debited & $5,420 Credited in this Week")}</p>
+      <ResponsiveContainer width="95%" height={350}>
         <BarChart
           data={data}
           margin={{
@@ -68,7 +67,7 @@ const DebitCreditOverview = () => {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey={t("name")} />
           <YAxis />
           <Tooltip />
           <Legend />

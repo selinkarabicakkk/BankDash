@@ -15,6 +15,7 @@
     align-items: center;
     gap: 2rem;
     padding: 1rem 4rem;
+    margin-top: 3rem;
 
 }
 
@@ -52,7 +53,11 @@
     align-items: center;
     gap: 2rem;
     padding: 0rem 4rem;
+    padding-bottom: 2rem;
+}
 
+.acc-row2-right {
+    padding-top: 4.6rem;
 }
 
 .acc-row3 {
@@ -68,6 +73,14 @@
     width: 35%;
     ;
 } 
+
+.acc-row3-right {
+    padding-bottom: 3.4rem;
+}
+
+.acc-row3-left {
+    padding-bottom: 3rem;
+}
 
 .invoices_icon {
     display: flex;
@@ -107,4 +120,10 @@ img[alt="acc_playstation"] {
 
 .invoices_text span:first-child {
     color: #B1B1B1;
+}
+
+h2 {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 0.7rem;
 }

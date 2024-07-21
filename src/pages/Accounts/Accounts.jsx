@@ -81,14 +81,26 @@ const Accounts = () => {
         </Box>
       </div>
       <div className="acc-row2">
-        <Box className="flex-2">
-          <LastTransaction />
-        </Box>
-        <Box className="flex-1"> {<Mycards cardType="blue-card" />}</Box>
+        <div className="acc-row2-left flex-2">
+          <h2>{t("last_transaction")}</h2>
+
+          <Box>
+            <LastTransaction />
+          </Box>
+        </div>
+        <div className="acc-row2-right flex-1">
+          <Box> {<Mycards cardType="blue-card" />}</Box>
+        </div>
       </div>
       <div className="acc-row3">
-        <Box className="flex-2">{<DebitCreditOverview />}</Box>
-        <Box className="flex-1">{<InvoicesSent />}</Box>
+        <div className="acc-row3-left flex-2">
+          <h2>{t("debit_credit_overview")}</h2>
+          <Box>{<DebitCreditOverview />}</Box>
+        </div>
+        <div className="acc-row3-right flex-1">
+          <h2>{t("invoices_sent")}</h2>
+          <Box>{<InvoicesSent />}</Box>
+        </div>
       </div>
     </div>
   );

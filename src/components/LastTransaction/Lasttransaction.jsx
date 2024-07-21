@@ -73,7 +73,6 @@ const LastTransaction = () => {
 
   return (
     <div className="last-transaction">
-      <h2>{t("last_transaction")}</h2>
       {transactionData.map((transaction) => (
         <Transaction key={transaction.id} {...transaction} />
       ))}

@@ -42,7 +42,6 @@ const InvoicesSent = () => {
 
   return (
     <div className="invoices-container">
-      <h2>{t("invoices_sent")}</h2>
       {invoices.map((invoice, index) => (
         <div key={index} className="invoice-card">
           <div className="invoice-icon">
