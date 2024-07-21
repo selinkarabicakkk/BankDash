@@ -16,13 +16,13 @@ const WeeklyActivityChart = () => {
   const { t } = useTranslation();
 
   const data = [
-    { name: t("sat"), Deposit: 400, Withdraw: 240 },
-    { name: t("sun"), Deposit: 300, Withdraw: 139 },
-    { name: t("mon"), Deposit: 200, Withdraw: 980 },
-    { name: t("tue"), Deposit: 278, Withdraw: 390 },
-    { name: t("wed"), Deposit: 189, Withdraw: 480 },
-    { name: t("thu"), Deposit: 239, Withdraw: 380 },
-    { name: t("fri"), Deposit: 349, Withdraw: 430 },
+    { name: t("sat"), [t("deposit")]: 400, [t("withdraw")]: 240 },
+    { name: t("sun"), [t("deposit")]: 300, [t("withdraw")]: 139 },
+    { name: t("mon"), [t("deposit")]: 200, [t("withdraw")]: 980 },
+    { name: t("tue"), [t("deposit")]: 278, [t("withdraw")]: 390 },
+    { name: t("wed"), [t("deposit")]: 189, [t("withdraw")]: 480 },
+    { name: t("thu"), [t("deposit")]: 239, [t("withdraw")]: 380 },
+    { name: t("fri"), [t("deposit")]: 349, [t("withdraw")]: 430 },
   ];
 
   return (

@@ -17,7 +17,7 @@ const Transaction = () => {
         <div className="tr-top-left">
           <div className="captions">
             <h2>{t("my_cards")}</h2>
-            <h2>{t("add_card")}</h2>
+            <h2>{t("plus_add_card")}</h2>
           </div>
           <div className="credit-cards">
             <Box className="flex-1">{<Mycards cardType="blue-card" />}</Box>

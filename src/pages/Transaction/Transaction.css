@@ -6,6 +6,11 @@
 
 } 
 
+.captions h2:nth-child(2):hover {
+    color: #343C6A;
+    cursor: pointer;
+}
+
 .tr-content {
     position: relative;
     background-color: #F5F7FA;

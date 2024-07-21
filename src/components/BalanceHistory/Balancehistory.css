@@ -2,8 +2,10 @@
     margin: auto;
 }
 .chart-container canvas {
-    width: 97% !important;
+    width: 95% !important;
+    height: 284px !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 2.3rem;
 }
