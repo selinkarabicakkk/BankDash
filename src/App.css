@@ -39,9 +39,20 @@
 
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .whole-page {
+    flex-direction: column;
+  }
+  
+  .navbar-withlanguage {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .navbar-withlanguage {
   display: flex;
-  
 }
 
 
@@ -52,5 +63,26 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Main Content area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Responsive adjustments for the sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive adjustments for the main content */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
   }
 }

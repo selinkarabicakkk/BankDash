@@ -88,3 +88,9 @@
     height: 60%;
     object-fit: contain;
 }
+
+@media (max-width: 480px) {
+    .navbar-left span {
+        font-size: 1.2rem;
+    }
+}

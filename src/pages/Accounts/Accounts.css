@@ -1,6 +1,4 @@
 
-
-
 .acc-content {
     position: relative;
     background-color: #F5F7FA;
@@ -127,3 +125,28 @@ h2 {
     justify-content: start;
     padding-bottom: 0.7rem;
 }
+
+@media (max-width: 768px) {
+    .acc-row1, .acc-row2, .acc-row3 {
+      flex-direction: column;
+      padding: 1rem; /* Adjust padding for small screens */
+    }
+  
+    .acc-row1 .flex-1, .acc-row3 .flex-1 {
+      width: 100%; /* Ensure items take full width */
+      padding-right: 0;
+    }
+  
+    .acc-row2-right {
+      padding-top: 1rem;
+    }
+  
+    .acc-row3-right, .acc-row3-left {
+      padding-bottom: 1rem;
+    }
+  
+    img[alt="acc_playstation"], img[alt="acc_person"] {
+      width: 100%;
+      max-width: 40%;
+    }
+  }

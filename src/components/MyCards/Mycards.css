@@ -74,3 +74,85 @@
 .valid-thru span:last-child {
   font-weight: 500;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .card .top {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  .card .bottom {
+    padding: 0.8rem 1.5rem 0.8rem;
+  }
+
+  .inside-bottom .chip-logo {
+    width: 20%;
+  }
+
+  .inside-bottom span {
+    font-size: 1.1rem;
+  }
+
+  .card-details {
+    gap: 2rem;
+  }
+
+  .card-holder,
+  .valid-thru {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card .top {
+    padding: 1rem 1rem 0;
+  }
+
+  .card .bottom {
+    padding: 0.6rem 1rem 0.6rem;
+  }
+
+  .inside-bottom .chip-logo {
+    width: 22%;
+  }
+
+  .inside-bottom span {
+    font-size: 1rem;
+  }
+
+  .card-details {
+    gap: 1rem;
+  }
+
+  .card-holder,
+  .valid-thru {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .top {
+    padding: 0.8rem 0.8rem 0;
+  }
+
+  .card .bottom {
+    padding: 0.4rem 0.8rem 0.4rem;
+  }
+
+  .inside-bottom .chip-logo {
+    width: 24%;
+  }
+
+  .inside-bottom span {
+    font-size: 0.9rem;
+  }
+
+  .card-details {
+    gap: 0.5rem;
+  }
+
+  .card-holder,
+  .valid-thru {
+    font-size: 0.5rem;
+  }
+}
