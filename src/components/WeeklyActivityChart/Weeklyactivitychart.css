@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .chart-container {
+      height: 300px; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-container {
+      height: 250px; /* Further adjust for very small screens */
+    }
+}

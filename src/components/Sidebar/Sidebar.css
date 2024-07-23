@@ -58,3 +58,12 @@ a {
     color: #B1B1B1;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  
